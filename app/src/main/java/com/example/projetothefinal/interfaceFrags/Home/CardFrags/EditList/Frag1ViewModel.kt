@@ -1,4 +1,4 @@
-package com.example.projetothefinal
+package com.example.projetothefinal.interfaceFrags.Home.CardFrags.EditList
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -7,6 +7,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit.Sumario
+import com.example.projetothefinal.Backend
 
 class Frag1ViewModel : ViewModel() {
     val coroutineScope = CoroutineScope(Dispatchers.IO)
@@ -17,7 +18,7 @@ class Frag1ViewModel : ViewModel() {
 
     init {
         coroutineScope.launch{
-            val SymbolSummaryList = data.fetchTickerSummaryList()
+            val SymbolSummaryList = data.fetchSumario()
             _symbolSummaryList.postValue(SymbolSummaryList)
         }
     }

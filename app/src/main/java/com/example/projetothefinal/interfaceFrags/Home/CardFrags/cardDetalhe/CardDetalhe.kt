@@ -1,7 +1,5 @@
-package com.example.projetothefinal
+package com.example.progmobile2.interfaceFrags.Home.CardFrags.EditList
 
-import Frag1RecyclerAdapter
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,12 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.projetothefinal.R
 
-class Frag1 : Fragment() {
+class FragList : Fragment() {
 
 
     companion object {
-        fun newInstance() = Frag1()
+        fun newInstance() = FragList()
     }
 
     override fun onCreateView(
